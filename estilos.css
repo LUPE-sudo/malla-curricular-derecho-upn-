@@ -1,1 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f5fc;
+  padding: 20px;
+}
+
+.malla {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: start;
+}
+
+.curso {
+  background-color: #c8a2c8; /* lila */
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  width: 220px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+  transition: transform 0.2s, opacity 0.3s ease-in-out;
+  position: relative;
+  opacity: 0.5;
+}
+
+.curso.aprobado {
+  opacity: 1;
+  background-color: #9b59b6;
+  border: 2px solid #6c3483;
+}
+
+.curso.bloqueado {
+  pointer-events: none;
+  opacity: 0.3;
+  background-color: #d7bfd7
+}
+
+.curso h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.curso small {
+  font-size: 12px;
+  display: block;
+  margin-top: 6px;
+}
+
 
